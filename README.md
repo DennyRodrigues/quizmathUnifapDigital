@@ -1,4 +1,12 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+### about
+
+Quiz-Math é um recurso educacional digital inovador, desenvolvido para transformar a maneira como alunos com deficiência auditiva aprendem operações matemáticas básicas. Criado como parte de uma dissertação de mestrado no Programa de Pós-Graduação em Educação Inclusiva (PROFEI) da Universidade Federal do Amapá (UNIFAP), nossa plataforma tem como foco tornar a matemática acessível, envolvente e culturalmente relevante.
+
+* Integração com Libras: Todas as perguntas e alternativas são acompanhadas por vídeos em Libras, garantindo total compreensão para alunos cuja primeira língua é Libras.
+* 
+* Design Acessível: Nossa interface apresenta botões grandes, cores de alto contraste e navegação simplificada, tornando mais fácil para usuários com diferentes níveis de familiaridade tecnológica interagir com a plataforma.
+* 
+* Contextualização Cultural: Acreditamos que o aprendizado é mais eficaz quando é relevante. Portanto, os problemas matemáticos no Quiz-Math são contextualizados na realidade amazônica, usando cenários familiares aos alunos da região, como compras em feiras locais, transporte fluvial e atividades escolares.
 
 ## Getting Started
 
