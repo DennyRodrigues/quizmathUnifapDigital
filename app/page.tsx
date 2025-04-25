@@ -1,7 +1,8 @@
 import { GridPatternDashed } from "@/components/dashed-grid-pattern";
 import { DifficultyCard } from "@/components/dificult-card";
-import { LevelSelection } from "@/components/level-selection";
+import Footer from "@/components/footerLogos";
 import { PlayButton } from "@/components/play-button";
+import Link from "next/link";
 
 export default function Intro() {
 	return (
@@ -26,16 +27,28 @@ export default function Intro() {
 							Pratique seus conhecimentos de matemática!
 						</p>
 					</div>
-					{/* <div className="flex flex-col gap-6 place-self-center">
-					<h2 className="text-center">Selecione a dificuldade</h2>
-					<LevelSelection />
-					<PlayButton text="JOGAR" />
-				</div> */}
 					<div className="flex flex-col gap-6 place-self-center">
 						<DifficultyCard />
 						<PlayButton text="JOGAR" />
 					</div>
 				</main>
+				<div>
+					<div className="flex flex-col gap-4 ">
+						<Link
+							href="/how-to-play"
+							className="flex justify-center items-center rounded px-4 py-2 text-white font-medium shadow-md transition-all bg-[#34D399] hover:bg-[#10B981] hover:scale-105"
+						>
+							<span className="mr-2">Como Jogar</span>
+						</Link>
+						<Link
+							href="/about-us"
+							className="flex justify-center items-center rounded px-4 py-2 text-white font-medium shadow-md transition-all bg-[#F472B6] hover:bg-[#EC4899]"
+						>
+							<span className="mr-2">Sobre nós</span>
+						</Link>
+					</div>
+				</div>
+				<Footer />
 			</div>
 			<GridPatternDashed />
 		</>

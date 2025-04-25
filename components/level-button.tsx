@@ -1,6 +1,6 @@
 "use client";
 
-import { Level } from "@/types/quiz";
+import { LevelInfo } from "@/types/quiz";
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
@@ -9,9 +9,9 @@ export function LevelButton({
 	isSelected,
 	setSelected,
 }: {
-	level: Level;
+	level: LevelInfo;
 	isSelected: boolean;
-	setSelected: (n: number) => void;
+	setSelected: () => void;
 }) {
 	return (
 		<motion.li
@@ -36,7 +36,7 @@ export function LevelButton({
 					damping: 17,
 				}}
 				style={{ backgroundColor: isSelected ? level.backgroundColor : "#eee" }}
-				onClick={() => setSelected(level.id)}
+				onClick={() => setSelected()}
 			>
 				<motion.span
 					className="relative z-10 block"
@@ -45,7 +45,7 @@ export function LevelButton({
 					}}
 					transition={{ duration: 0.2 }}
 				>
-					{level.text}
+					{level.displayText}
 				</motion.span>
 
 				{isSelected && (
