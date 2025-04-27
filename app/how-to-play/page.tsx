@@ -57,7 +57,7 @@ export default function HowToPlay() {
           <div className="max-w-4xl mx-auto space-y-8 text-slate-800">
             <section>
               <p className="mb-6 text-lg">
-                Ao abrir o Quiz-Math, você se deparará com uma tela intuitiva e fácil de usar.
+                Ao abrir o QuizMath, você se deparará com uma tela intuitiva e fácil de usar.
               </p>
 
               <ul className="space-y-4 mb-6">
@@ -66,7 +66,7 @@ export default function HowToPlay() {
                     1
                   </span>
                   <div>
-                    <span className="font-semibold">Título e Slogan:</span> No topo, você verá o título "QUIZ MATH" e o
+                    <span className="font-semibold">Título e Slogan:</span> No topo, você verá o título "QuizMath" e o
                     slogan "Pratique seus conhecimentos de matemática!".
                   </div>
                 </li>
@@ -111,7 +111,7 @@ export default function HowToPlay() {
 
             <section>
               <h2 className="text-2xl font-bold text-[#34D399] mb-4">Como Jogar</h2>
-              <p className="mb-4">Agora, vamos ao que interessa: jogar o Quiz-Math!</p>
+              <p className="mb-4">Agora, vamos ao que interessa: jogar o QuizMath!</p>
 
               <ul className="space-y-4 mb-6">
                 <li className="flex gap-3">
@@ -159,7 +159,7 @@ export default function HowToPlay() {
                     5
                   </span>
                   <div>
-                    <span className="font-semibold">Recebendo Feedback:</span> O Quiz-Math te dará feedback imediato
+                    <span className="font-semibold">Recebendo Feedback:</span> O QuizMath te dará feedback imediato
                     sobre suas respostas:
                     <ul className="list-disc pl-6 mt-2 space-y-1">
                       <li>Se você acertar, receberá uma mensagem de confirmação.</li>
@@ -207,7 +207,7 @@ export default function HowToPlay() {
 
             <section>
               <h2 className="text-2xl font-bold text-[#F87171] mb-4">Funcionalidades Principais</h2>
-              <p className="mb-4">O Quiz-Math oferece diversas funcionalidades para uma experiência completa:</p>
+              <p className="mb-4">O QuizMath oferece diversas funcionalidades para uma experiência completa:</p>
 
               <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
                 <div className="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
@@ -246,7 +246,7 @@ export default function HowToPlay() {
 
             <section>
               <h2 className="text-2xl font-bold text-[#FBBF24] mb-4">Solução de Problemas Comuns</h2>
-              <p className="mb-4">Se você encontrar algum problema ao usar o Quiz-Math, aqui estão algumas soluções:</p>
+              <p className="mb-4">Se você encontrar algum problema ao usar o QuizMath, aqui estão algumas soluções:</p>
 
               <div className="space-y-4">
                 <div className="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
@@ -255,7 +255,7 @@ export default function HowToPlay() {
                 </div>
                 <div className="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
                   <h3 className="font-bold text-[#60A5FA] mb-2">Pontuação não aparece</h3>
-                  <p>Limpe o cache do seu navegador ou tente acessar o Quiz-Math em outro dispositivo.</p>
+                  <p>Limpe o cache do seu navegador ou tente acessar o QuizMath em outro dispositivo.</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg border border-slate-200 shadow-sm">
                   <h3 className="font-bold text-[#34D399] mb-2">Travamento durante o quiz</h3>

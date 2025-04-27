@@ -49,7 +49,7 @@ export default function AboutUs() {
             <section>
               <h2 className="text-2xl font-bold text-[#34D399] mb-4">Nossa Missão</h2>
               <p className="mb-4">
-                Quiz-Math é um recurso educacional digital inovador, desenvolvido para transformar a maneira como alunos
+                QuizMath é um recurso educacional digital inovador, desenvolvido para transformar a maneira como alunos
                 com deficiência auditiva aprendem operações matemáticas básicas. Criado como parte de uma dissertação de
                 mestrado no Programa de Pós-Graduação em Educação Inclusiva (PROFEI) da Universidade Federal do Amapá
                 (UNIFAP), nossa plataforma tem como foco tornar a matemática acessível, envolvente e culturalmente
@@ -60,9 +60,9 @@ export default function AboutUs() {
             <section>
               <h2 className="text-2xl font-bold text-[#60A5FA] mb-4">Nosso Compromisso com a Inclusão</h2>
               <p className="mb-4">
-                A inclusão é o princípio fundamental do Quiz-Math. Entendemos a importância de fornecer ferramentas de
+                A inclusão é o princípio fundamental do QuizMath. Entendemos a importância de fornecer ferramentas de
                 aprendizado que atendam às necessidades específicas de alunos com deficiência auditiva. Cada aspecto do
-                Quiz-Math é projetado para garantir uma experiência de aprendizado eficaz e contínua:
+                QuizMath é projetado para garantir uma experiência de aprendizado eficaz e contínua:
               </p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
@@ -77,7 +77,7 @@ export default function AboutUs() {
                 </li>
                 <li>
                   <span className="font-semibold">Contextualização Cultural:</span> Acreditamos que o aprendizado é mais
-                  eficaz quando é relevante. Portanto, os problemas matemáticos no Quiz-Math são contextualizados na
+                  eficaz quando é relevante. Portanto, os problemas matemáticos no QuizMath são contextualizados na
                   realidade amazônica, usando cenários familiares aos alunos da região, como compras em feiras locais,
                   transporte fluvial e atividades escolares.
                 </li>
@@ -87,7 +87,7 @@ export default function AboutUs() {
             <section>
               <h2 className="text-2xl font-bold text-[#F87171] mb-4">Nossa Fundamentação Pedagógica</h2>
               <p className="mb-4">
-                O Quiz-Math é construído sobre uma sólida base pedagógica. Ele é fundamentado na Teoria dos Campos
+                O QuizMath é construído sobre uma sólida base pedagógica. Ele é fundamentado na Teoria dos Campos
                 Conceituais de Vergnaud, especificamente no campo aditivo, e alinhado às diretrizes da Base Nacional
                 Comum Curricular (BNCC). Fornecemos feedback imediato para cada resposta, promovendo o aprendizado por
                 meio da tentativa e erro e reforçando os conceitos de forma eficaz.
@@ -97,7 +97,7 @@ export default function AboutUs() {
             <section>
               <h2 className="text-2xl font-bold text-[#FBBF24] mb-4">Nossa Tecnologia</h2>
               <p className="mb-4">
-                Tecnologicamente, o Quiz-Math é desenvolvido usando React.js, garantindo alto desempenho e
+                Tecnologicamente, o QuizMath é desenvolvido usando React.js, garantindo alto desempenho e
                 acessibilidade. Nosso código aberto reflete nosso compromisso com a colaboração e permite que outras
                 instituições adaptem a ferramenta aos seus contextos específicos. A plataforma está disponível
                 gratuitamente online e pode ser acessada em qualquer navegador atualizado, seja em um celular, tablet ou
@@ -107,7 +107,7 @@ export default function AboutUs() {
 
             <section>
               <h2 className="text-2xl font-bold text-[#F472B6] mb-4">Nosso Impacto</h2>
-              <p className="mb-4">O Quiz-Math foi projetado para gerar um impacto significativo em várias frentes:</p>
+              <p className="mb-4">O QuizMath foi projetado para gerar um impacto significativo em várias frentes:</p>
               <ul className="list-disc pl-6 space-y-2">
                 <li>
                   <span className="font-semibold">Para os Alunos:</span> Oferecemos uma experiência de aprendizado
@@ -129,7 +129,7 @@ export default function AboutUs() {
             <section>
               <h2 className="text-2xl font-bold text-[#34D399] mb-4">Nosso Futuro</h2>
               <p className="mb-4">
-                Quiz-Math é mais do que apenas um recurso digital; é um passo em direção a uma educação mais inclusiva e
+                QuizMath é mais do que apenas um recurso digital; é um passo em direção a uma educação mais inclusiva e
                 equitativa. Estamos comprometidos com a melhoria contínua e a expansão, com planos de incluir outras
                 operações matemáticas e desenvolver versões offline para alcançar ainda mais alunos.
               </p>
