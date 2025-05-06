@@ -15,6 +15,7 @@ import confetti from "canvas-confetti";
 import styles from "./play.module.css";
 import { useQuizStore } from "@/lib/zustand";
 import { Confetti, ConfettiRef } from "@/components/magicui/confetti";
+import { ScoreDisplay } from "@/components/scoreDisplay/scoreDisplay";
 const LibrasCardClient = dynamic(
 	() =>
 		import("../../components/vlibras/LibrasCard/LibrasCard").then(
@@ -208,13 +209,13 @@ export default function Play() {
 								? "Desativar tradução por hover"
 								: "Ativar tradução por hover"
 						}
-						onClick={toggleSelectMode}
 					>
 						<SelectModeIcon
 							isActive={selectMode}
 							size={36}
 							activeColor="#4f46e5"
 							defaultColor="#a5b4fc"
+							onClick={toggleSelectMode}
 						/>
 					</Tooltip>
 				</div>
@@ -240,20 +241,7 @@ export default function Play() {
 						))}
 					</div>
 				</div>
-
-				<div className={styles.scoreContainer}>
-					<motion.div
-						key={sessionCoins}
-						initial={{ scale: 1 }}
-						animate={{ scale: [1, 1.2, 1] }}
-						transition={{ duration: 0.3 }}
-					>
-						<CoinIcon />
-					</motion.div>
-					<span className="select-none font-bungee font-medium text-lg text-white tracking-wider sm:text-xl">
-						{sessionCoins}
-					</span>
-				</div>
+				<ScoreDisplay score={sessionCoins} />
 			</motion.header>
 
 			<div className={styles.avatarArea}>

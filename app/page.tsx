@@ -1,13 +1,20 @@
+"use client";
 import { GridPatternDashed } from "@/components/dashed-grid-pattern";
 import { DifficultyCard } from "@/components/dificult-card";
 import Footer from "@/components/footerLogos";
 import { PlayButton } from "@/components/play-button";
+import { ScoreDisplay } from "@/components/scoreDisplay/scoreDisplay";
+import { useQuizStore } from "@/lib/zustand";
 import Link from "next/link";
 
 export default function Intro() {
+	const globalCoins = useQuizStore((state) => state.globalCoins);
 	return (
 		<>
 			<div className="grid min-h-screen justify-items-center pt-20 pb-10">
+					<div className="ml-auto mr-20 max-w-7xl" >
+					<ScoreDisplay score={globalCoins} />
+					</div>
 				<main className="grid gap-2 [grid-template-rows:auto_1fr]">
 					<div>
 						<h1 className="select-none text-center font-bungee text-4xl tracking-wide [text-shadow:3px_3px_0_rgba(0,0,0,0.05),_6px_6px_0_rgba(0,0,0,0.02)]">

@@ -1,0 +1,35 @@
+
+.scoreContainer {
+	display: inline-flex;
+	flex-shrink: 0;
+	gap: 6px;
+	align-items: center;
+	background: #ffaa009a;
+	padding: 2px 8px;
+	border-radius: 12px;
+
+	position: relative;
+
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	box-shadow: 0px 0px 2px #ffaa00;
+}
+
+.scoreIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-right: 6px;
+	background: radial-gradient(circle, #ffd700 0%, #ffb700 100%);
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	box-shadow: inset 0 -2px 3px rgba(0, 0, 0, 0.3), inset 0 2px 2px
+		rgba(255, 255, 255, 0.7);
+}
+
+.scoreContainer span {
+	color: #835900;
+	letter-spacing: 0.5px;
+	text-shadow: 0 1px 0 #dab900c5, 0 -1px 0 rgba(117, 110, 2, 0.2);
+}
