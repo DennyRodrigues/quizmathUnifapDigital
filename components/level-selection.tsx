@@ -20,22 +20,25 @@ export function LevelSelection() {
 		animate={{ opacity: 1 }}
 		transition={{ duration: 0.5, staggerChildren: 0.1 }}
 	>
-		{LEVELS.map((level) => (
+		{LEVELS.map((level) => {
+			const isDisabled = level.requiredCoins > globalCoins
+			return (
 
-			<Tooltip
-				key={`${level.id}-tooltip`}
-				text={`Requer ${level.requiredCoins} moedas`}
-			>
-				<LevelButton
-					key={level.id}
-					level={level}
-					isDisabled={level.requiredCoins > globalCoins}
-					isSelected={currentDifficulty === level.level}
-					setSelected={() => setDifficulty(level.level)}
-				/>
-			</Tooltip>
+				<Tooltip
+					key={`${level.id}-tooltip`}
+					text={isDisabled ? `Ganhe mais moedas para desbloquear este nível. Requer ${level.requiredCoins} moedas ` : `Requer ${level.requiredCoins} moedas`}
+				>
+					<LevelButton
+						key={level.id}
+						level={level}
+						isDisabled={isDisabled}
+						isSelected={currentDifficulty === level.level}
+						setSelected={() => setDifficulty(level.level)}
+					/>
+				</Tooltip>
 
-		))
+			)
+		})
 		}
 	</motion.ul >
 
