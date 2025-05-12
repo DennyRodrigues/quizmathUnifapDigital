@@ -137,7 +137,7 @@ export const questoes: Questao[] = [
   },
   {
     "id": 19,
-    "enunciado": "O time azul fez 245 pontos e o vermelho 233. Quantos pontos a mais?",
+    "enunciado": "Em uma competição, o time azul fez 245 pontos e o time vermelho fez 233 pontos. Quantos pontos a mais o time azul fez em relação ao time vermelho?",
     "opcoes": [ "12", "11", "10", "13" ],
     "respostaCorreta": 0,
     "dificuldade": "Fácil"
