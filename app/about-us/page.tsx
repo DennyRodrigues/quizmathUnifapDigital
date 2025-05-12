@@ -47,6 +47,45 @@ export default function AboutUs() {
 
           <div className="max-w-4xl mx-auto space-y-8 text-slate-800">
             <section>
+              <h2 className="text-2xl font-bold text-[#60A5FA] mb-4">Aventura Matemática na Vila dos Avatares</h2>
+              <p className="mb-4">
+                Na Vila dos Avatares, viviam quatro grandes amigos: Hozana, Guga e Ícaro. Cada um deles adorava resolver desafios,
+                mas o que mais gostavam mesmo... era de matemática!
+              </p>
+              <p className="mb-4">
+                Um dia, enquanto brincavam perto do rio Amazonas, apareceu uma coruja muito sábia chamada Corujuba. Ela trouxe um
+                bilhete mágico com um convite especial:
+              </p>
+              <blockquote className="italic border-l-4 border-[#60A5FA] pl-4 text-slate-700 mb-4">
+                "Heróis da Matemática, precisamos da ajuda de vocês! O Reino dos Números foi invadido pela Confusão dos Erros.
+                Só quem conseguir resolver os desafios poderá salvar a Rainha Adição!"
+              </blockquote>
+              <p className="mb-4">
+                Animados, os amigos apertaram o botão azul brilhante do bilhete. De repente, <strong>PUF!</strong> – foram
+                transportados para dentro do mundo do <strong>QuizMath</strong>!
+              </p>
+              <p className="mb-4">
+                Lá, tudo era colorido e cheio de sinais, somas e figuras dançantes. Cada avatar teve que escolher um caminho: fácil,
+                médio ou difícil. Mas, para avançar, era preciso resolver os problemas com atenção, usando raciocínio e uma ajudinha
+                da Libras, que aparecia com mágica nas mãos de um ajudante sorridente.
+              </p>
+              <p className="mb-4">
+                A cada acerto, o caminho se iluminava com pontos dourados e um "Muito bem!" ecoava pelos céus. Mas, se errassem, não
+                tinha problema – aparecia uma dica amiga dizendo onde estava a confusão, e todos podiam tentar de novo.
+              </p>
+              <p className="mb-4">
+                No final da jornada, juntos, os avatares somaram todas as respostas certas e libertaram a Rainha Adição, que sorriu
+                e disse:
+              </p>
+              <blockquote className="italic border-l-4 border-[#60A5FA] pl-4 text-slate-700 mb-4">
+                “Parabéns, pequenos gênios! Agora vocês mostraram que a matemática também é lugar de diversão, amizade e inclusão!”
+              </blockquote>
+              <p className="mb-4">
+                E assim, com um botão de “Jogar Novamente”, voltaram para a Vila dos Avatares – prontos para viver mais uma aventura
+                no mundo encantado do <strong>QuizMath</strong>!
+              </p>
+            </section>
+            <section>
               <h2 className="text-2xl font-bold text-[#34D399] mb-4">Nossa Missão</h2>
               <p className="mb-4">
                 QuizMath é um recurso educacional digital inovador, desenvolvido para transformar a maneira como alunos
