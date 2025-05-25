@@ -1,44 +1,80 @@
-### about
+# Quiz-Math
 
-Quiz-Math é um recurso educacional digital inovador, desenvolvido para transformar a maneira como alunos com deficiência auditiva aprendem operações matemáticas básicas. Criado como parte de uma dissertação de mestrado no Programa de Pós-Graduação em Educação Inclusiva (PROFEI) da Universidade Federal do Amapá (UNIFAP), nossa plataforma tem como foco tornar a matemática acessível, envolvente e culturalmente relevante.
+## Sobre
 
-* Integração com Libras: Todas as perguntas e alternativas são acompanhadas por vídeos em Libras, garantindo total compreensão para alunos cuja primeira língua é Libras.
-* 
-* Design Acessível: Nossa interface apresenta botões grandes, cores de alto contraste e navegação simplificada, tornando mais fácil para usuários com diferentes níveis de familiaridade tecnológica interagir com a plataforma.
-* 
-* Contextualização Cultural: Acreditamos que o aprendizado é mais eficaz quando é relevante. Portanto, os problemas matemáticos no Quiz-Math são contextualizados na realidade amazônica, usando cenários familiares aos alunos da região, como compras em feiras locais, transporte fluvial e atividades escolares.
+**Quiz-Math** é um recurso educacional digital inovador, desenvolvido para transformar a maneira como alunos com deficiência auditiva aprendem operações matemáticas básicas. Criado como parte de uma dissertação de mestrado no Programa de Pós-Graduação em Educação Inclusiva (PROFEI) da Universidade Federal do Amapá (UNIFAP), nossa plataforma tem como foco tornar a matemática acessível, envolvente e culturalmente relevante.
 
-## Getting Started
+- **Integração com Libras:** Todas as perguntas e alternativas são acompanhadas por vídeos em Libras, garantindo total compreensão para alunos cuja primeira língua é a Língua Brasileira de Sinais.
+- **Design Acessível:** A interface apresenta botões grandes, cores de alto contraste e navegação simplificada, facilitando o uso por alunos com diferentes níveis de familiaridade tecnológica.
+- **Contextualização Cultural:** O aprendizado é mais eficaz quando é relevante. Por isso, os problemas matemáticos do Quiz-Math são contextualizados na realidade amazônica, abordando cenários como compras em feiras locais, transporte fluvial e atividades escolares.
 
-First, run the development server:
+---
+
+## Começando
+
+Siga os passos abaixo para rodar o projeto em ambiente de desenvolvimento:
+
+### 1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/quiz-math.git
+cd quiz-math
+```
+
+### 2. Instale as dependências:
+
+Escolha o seu gerenciador de pacotes favorito:
+
+```bash
+npm install
+# ou
+yarn
+# ou
+pnpm install
+# ou
+bun install
+```
+
+### 3. Inicie o servidor de desenvolvimento:
 
 ```bash
 npm run dev
-# or
+# ou
 yarn dev
-# or
+# ou
 pnpm dev
-# or
+# ou
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Acesse no navegador:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Abra [http://localhost:3000](http://localhost:3000) para visualizar o projeto em execução.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 5. Edite o projeto:
 
-## Learn More
+Para começar a personalizar a aplicação, edite o arquivo:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+app/page.tsx
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+O site será atualizado automaticamente conforme você salva as alterações.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Saiba Mais
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para aprender mais sobre o Next.js, veja os seguintes recursos:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [Documentação do Next.js](https://nextjs.org/docs)
+- [Tutorial interativo do Next.js](https://nextjs.org/learn)
+- [Repositório oficial no GitHub](https://github.com/vercel/next.js)
+
+---
+
+## Implantação com Vercel
+
+A forma mais fácil de publicar o projeto é usando a plataforma da [Vercel](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme), criadora do Next.js.
+
+Confira a [documentação de deploy do Next.js](https://nextjs.org/docs/app/building-your-application/deploying) para mais detalhes.
