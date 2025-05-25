@@ -17,6 +17,7 @@ export type LevelInfo = {
 	id: number;
 	questions: number;
 	multiplier: number;
+	requiredCoins: number; 
 };
 
 export const LEVELS: LevelInfo[] = [
@@ -27,6 +28,7 @@ export const LEVELS: LevelInfo[] = [
 		id: 0,
 		questions: 8,
 		multiplier: 1,
+		requiredCoins: 0,
 	},
 	{
 		backgroundColor: "#FBBF24",
@@ -35,6 +37,7 @@ export const LEVELS: LevelInfo[] = [
 		id: 1,
 		questions: 10,
 		multiplier: 2,
+		requiredCoins: 350,
 	},
 	{
 		backgroundColor: "#F87171",
@@ -43,5 +46,6 @@ export const LEVELS: LevelInfo[] = [
 		id: 2,
 		questions: 12,
 		multiplier: 3,
+		requiredCoins: 700,
 	},
 ] as const;

@@ -1,21 +1,21 @@
 "use client";
 
 import type React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from 'next/navigation';
 import { AnimatePresence, motion } from "framer-motion";
 import dynamic from "next/dynamic";
-
 import { Tooltip } from "@/components/tooltip/tooltip";
 import { OptionButton } from "@/components/option-button";
 import { FeedbackSlider } from "./feedback";
 import { CoinIcon } from "@/components/icons/coin";
 import { SelectModeIcon } from "@/components/icons/selectModeIcon";
+import confetti from "canvas-confetti";
 
 import styles from "./play.module.css";
 import { useQuizStore } from "@/lib/zustand";
-
-
+import { Confetti, ConfettiRef } from "@/components/magicui/confetti";
+import { ScoreDisplay } from "@/components/scoreDisplay/scoreDisplay";
 const LibrasCardClient = dynamic(
 	() =>
 		import("../../components/vlibras/LibrasCard/LibrasCard").then(
@@ -36,6 +36,8 @@ export default function Play() {
 	const sessionCoins = useQuizStore((state) => state.sessionCoins);
 	const answerQuestion = useQuizStore((state) => state.answerQuestion);
 	const nextQuestion = useQuizStore((state) => state.nextQuestion);
+
+	const confettiRef = useRef<ConfettiRef>(null);
 
 	const [hoveredOptionIndex, setHoveredOptionIndex] = useState<number | null>(null);
 	const [selectMode, setSelectMode] = useState<boolean>(false);
@@ -100,6 +102,47 @@ export default function Play() {
 		}
 	};
 
+	const displayConffetti = () => {
+
+		const duration = 1.5 * 1000;
+		const end = Date.now() + duration;
+		const colors = ["#a786ff", "#fd8bbc", "#eca184", "#f8deb1"];
+
+		const confettiDefaults = {
+			zIndex: 10000,
+			colors: colors,
+		};
+
+		const frame = () => {
+			if (Date.now() > end) {
+				console.log("Confetti animation finished.");
+				return;
+			}
+
+			confetti({
+				...confettiDefaults,
+				particleCount: 5,
+				angle: 50,
+				spread: 80,
+				startVelocity: 50,
+				origin: { x: 0, y: 0.8 },
+			});
+
+			confetti({
+				...confettiDefaults,
+				particleCount: 5,
+				angle: 130,
+				spread: 80,
+				startVelocity: 50,
+				origin: { x: 1, y: 0.8 },
+			});
+
+			requestAnimationFrame(frame);
+		};
+
+		frame();
+	};
+
 	const handleOptionClick = (index: number) => {
 		if (answered || !currentQuestion) return;
 
@@ -107,9 +150,9 @@ export default function Play() {
 
 		const correct = index === currentQuestion.respostaCorreta;
 		setIsCorrect(correct);
-
 		if (correct) {
 			setCurrentLibrasText("Parabéns! Resposta Correta!");
+			displayConffetti();
 		} else {
 			const correctAnswerIndex = currentQuestion.respostaCorreta;
 			const correctAnswerText = currentQuestion.opcoes[correctAnswerIndex] || "Desconhecida";
@@ -140,8 +183,23 @@ export default function Play() {
 
 	return (
 		<main className={`${styles.grid}`}>
-			<motion.header className="sticky top-0 z-30 flex w-full items-center justify-between bg-white px-4 py-3 shadow-md sm:px-6 sm:py-2">
-				<div className="flex items-center gap-2">
+			<Confetti
+				ref={confettiRef}
+				manualstart // Important: Prevent auto-fire on mount
+				// key={currentQuestionIndex} // Option 1: Uncomment to force remount
+				style={{ // Option 2: Ensure visibility
+					position: 'fixed',
+					top: 0,
+					left: 0,
+					width: '100%',
+					height: '100%',
+					pointerEvents: 'none',
+					zIndex: 10000, // High z-index
+				}}
+			/>
+			<motion.header className="sticky top-0 z-30 flex w-full items-center justify-between px-4 py-3 shadow-md sm:px-6 sm:py-2">
+
+				<div className="flex items-center gap-2 ">
 					<div className="rounded-lg bg-indigo-600 px-3 py-1.5 font-bold text-sm text-white sm:text-base">
 						Questão {currentQuestionIndex + 1} / {totalQuestions}
 					</div>
@@ -151,13 +209,13 @@ export default function Play() {
 								? "Desativar tradução por hover"
 								: "Ativar tradução por hover"
 						}
-						onClick={toggleSelectMode}
 					>
 						<SelectModeIcon
 							isActive={selectMode}
 							size={36}
 							activeColor="#4f46e5"
 							defaultColor="#a5b4fc"
+							onClick={toggleSelectMode}
 						/>
 					</Tooltip>
 				</div>
@@ -183,20 +241,7 @@ export default function Play() {
 						))}
 					</div>
 				</div>
-
-				<div className={styles.scoreContainer}>
-					<motion.div
-						key={sessionCoins}
-						initial={{ scale: 1 }}
-						animate={{ scale: [1, 1.2, 1] }}
-						transition={{ duration: 0.3 }}
-					>
-						<CoinIcon />
-					</motion.div>
-					<span className="select-none font-bungee font-medium text-lg text-white tracking-wider sm:text-xl">
-						{sessionCoins}
-					</span>
-				</div>
+				<ScoreDisplay score={sessionCoins} />
 			</motion.header>
 
 			<div className={styles.avatarArea}>

@@ -56,7 +56,7 @@ export function PlayButton({
 	return <Button3D
 		colorScheme={COLOR_SCHEMES[selectedDifficulty]}
 		icon={<PlayIcon />}
-		className="w-full font-extrabold text-lg text-white uppercase"
+		className="w-full mb-5 font-extrabold text-lg text-white uppercase"
 		onClick={handleStart}
 		{...props}
 

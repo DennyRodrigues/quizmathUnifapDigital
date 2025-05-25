@@ -8,10 +8,12 @@ export function LevelButton({
 	level,
 	isSelected,
 	setSelected,
+	isDisabled,
 }: {
 	level: LevelInfo;
 	isSelected: boolean;
 	setSelected: () => void;
+	isDisabled: boolean;
 }) {
 	return (
 		<motion.li
@@ -35,6 +37,7 @@ export function LevelButton({
 					stiffness: 400,
 					damping: 17,
 				}}
+				disabled={isDisabled}
 				style={{ backgroundColor: isSelected ? level.backgroundColor : "#eee" }}
 				onClick={() => setSelected()}
 			>

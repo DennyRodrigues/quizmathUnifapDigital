@@ -71,7 +71,7 @@ export const useQuizStore = create<QuizState>()(
 				}
 
 				const rules = QUESTIONS_COUNT_RULES[selectedDifficulty];
-				let selectedForQuiz: Questao[] = [];
+				const selectedForQuiz: Questao[] = [];
 
 				const easyQuestions = allQuestions.filter(q => q.dificuldade === 'Fácil');
 				const mediumQuestions = allQuestions.filter(q => q.dificuldade === 'Médio');

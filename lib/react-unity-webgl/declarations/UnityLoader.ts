@@ -10,7 +10,7 @@ declare class UnityLoader {
 	public static instantiate(
 		elementId: string,
 		source: string,
-		options?: Object,
+		options?: object,
 	): UnityInstance;
 
 	/**

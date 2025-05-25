@@ -12,7 +12,7 @@ export default interface IUnityConfig {
    * Unity Module injection.
    * @type {Object}
    */
-  modules?: Object;
+  modules?: object;
 
   /**
    * The url where the streaming assets can be found. When using a relative url,
