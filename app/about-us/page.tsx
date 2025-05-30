@@ -80,11 +80,13 @@ export default function AboutUs() {
             <section>
               <h2 className="text-2xl font-bold text-[#34D399] mb-4">Nossa Missão</h2>
               <p className="mb-4">
-                QuizMath é um recurso educacional digital inovador, desenvolvido para transformar a maneira como alunos
-                com deficiência auditiva aprendem operações matemáticas básicas. Criado como parte de uma dissertação de
-                mestrado no Programa de Pós-Graduação em Educação Inclusiva (PROFEI) da Universidade Federal do Amapá
-                (UNIFAP), nossa plataforma tem como foco tornar a matemática acessível, envolvente e culturalmente
-                relevante.
+                O QuizMath é um jogo educacional desenvolvido no âmbito do Programa de Mestrado Profissional em Educação Inclusiva em Rede Nacional (PROFEI/UNIFAP), como parte da pesquisa realizada pelo mestrando Raimundo Gomes Luz, sob orientação do Professor Dr. Rafael Pontes Lima. A pesquisa teve início em junho de 2023 e foi concluída em abril de 2025, com foco na promoção de práticas pedagógicas inclusivas voltadas ao ensino de Matemática para estudantes surdos.
+              </p>
+              <p className="mb-4">
+                O desenvolvimento técnico do QuizMath contou com o apoio dos desenvolvedores Dario Rodrigues do Carmo e Denny Rodrigues do Carmo, alunos do curso de graduação em Ciência da Computação da Unifap, integrantes do laboratório de pesquisa e extensão UNIFAP Digital, cuja colaboração foi essencial para garantir um ambiente visualmente atrativo, funcional e alinhado aos princípios da educação inclusiva contemporânea.
+              </p>
+              <p className="mb-4">
+                Ao navegar pelo QuizMath, o(a) estudante encontrará desafios matemáticos organizados em níveis, com questões contextualizadas, recursos visuais e o uso da Língua Brasileira de Sinais (Libras) como suporte à compreensão e interação. Mais do que um jogo, o QuizMath é uma ponte entre o conhecimento matemático e a acessibilidade, promovendo o direito à aprendizagem com equidade e respeito à diversidade.
               </p>
             </section>
 
