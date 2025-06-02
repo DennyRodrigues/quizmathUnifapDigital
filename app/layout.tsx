@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Bungee, Geist, Geist_Mono, Nunito } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { F } from "@vercel/analytics/next"
 
 const nunitoSans = Nunito({
 	variable: "--font-nunito",
