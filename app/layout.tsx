@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 		],
 		apple: "/apple-touch-icon.png",
 	},
-	manifest: "/site.webmanifest", 
+	manifest: "/site.webmanifest",
 };
 
 const fonts = [nunitoSans.variable, geistMono.variable, bungee.variable];
@@ -44,7 +44,9 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="pt-br">
-			<body className={cn([...fonts], "antialiased")}>{children}</body>
+			<body className={cn([...fonts], "antialiased")}>{children}
+				<Analytics />
+			</body>
 		</html>
 	);
 }
